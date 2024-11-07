@@ -19,6 +19,8 @@ const ProductDetails = () => {
   const handleAddToCart = () => {
     console.log("This is comming from productdetails");
     console.log(product.id, product.title);
+    //using useState to add and update the cart
+    //using Array to update the quantity of the product
   };
 
   if (!product) return <div>Loading...</div>;
@@ -31,7 +33,7 @@ const ProductDetails = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          minHeight: '100vh', // Ensure the content fills the full height of the screen
+          minHeight: '100vh',
           flexDirection: 'column',
           padding: '20px',
         }}
