@@ -19,7 +19,7 @@ const Home = () => {
     setSearchQuery(item);
   };
 
-  const filterproducts = products.filter((product) =>
+  const seachedProduct = products.filter((product) =>
     product.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -31,7 +31,7 @@ const Home = () => {
       <SearchBar onSearch={handleSearch} />
       <Container>
         <Row>
-          {filterproducts.map((item) => (
+          {seachedProduct.map((item) => (
             <ProductCard key={item.id} product={item} />
           ))}
         </Row>
