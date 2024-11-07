@@ -4,13 +4,14 @@ import SearchBar from '../components/SearchBar';
 import { Container, Row } from 'react-bootstrap';
 import Navibar from '../components/Navbar';
 import CarouselBanner from '../components/CarouselBanner';
+import { API_URL } from "../constant";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch(`${API_URL}`)
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
