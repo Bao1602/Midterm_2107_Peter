@@ -1,10 +1,9 @@
-import { Fragment, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import ProductCard from '../components/ProductCard';
 import SearchBar from '../components/SearchBar';
 import { Container, Row } from 'react-bootstrap';
 import Navibar from '../components/Navbar';
 import CarouselBanner from '../components/CarouselBanner';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 const Home = () => {
   const [products, setProducts] = useState([]);

@@ -17,7 +17,8 @@ const ProductDetails = () => {
   }, [id]);
 
   const handleAddToCart = () => {
-    // Logic for adding to cart
+    console.log("This is comming from productdetails");
+    console.log(product.id, product.title);
   };
 
   if (!product) return <div>Loading...</div>;
@@ -71,7 +72,7 @@ const ProductDetails = () => {
         <Button
           variant="contained"
           color="primary"
-          //onClick={handleAddToCart}
+          onClick={handleAddToCart}
           sx={{ marginTop: '20px' }}
         >
           Add to Cart

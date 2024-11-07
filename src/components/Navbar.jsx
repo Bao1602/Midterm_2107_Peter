@@ -8,7 +8,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const Navibar = () => (
 <Navbar expand="lg" className="bg-body-tertiary">
 <Container>
-  <Navbar.Brand href="/" style={{fontSize: '2.5rem', fontWeight: 'bold'}}>React-Bootstrap</Navbar.Brand>
+  <Navbar.Brand href="/" style={{fontSize: '2.5rem', fontWeight: 'bold'}}>Midterm_Peter</Navbar.Brand>
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="me-auto" style={{fontSize: '2rem'}}>
       <Nav.Link href="/checkout ">Check out</Nav.Link>
