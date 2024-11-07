@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Navibar from '../components/Navbar';
 import * as React from 'react';
+import { API_URL } from '../constant';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -11,7 +12,7 @@ const ProductDetails = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${id}`)
+    fetch(`${API_URL}/${id}`)
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [id]);
