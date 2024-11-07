@@ -1,7 +1,7 @@
 import React from 'react';
 import { useRoutes } from 'react-router-dom';
 import Home from './Pages/Home';
-import Productdetails from './Pages/Productdetails';
+import ProductDetails from './Pages/Productdetails';
 import Cart from './Pages/Cart';
 import Checkout from './Pages/Checkout';
 import NotFoundPage from './Pages/NotFoundPage';
@@ -16,7 +16,7 @@ function App() {
     {
       //productdetails Page
       path: '/products/:id',
-      element: <Productdetails />
+      element: <ProductDetails />
     },
     {
       path: '/cart',

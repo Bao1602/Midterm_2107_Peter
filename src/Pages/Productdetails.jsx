@@ -33,7 +33,7 @@ const ProductDetails = () => {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          minHeight: '100vh',
+          minHeight: '100vh', 
           flexDirection: 'column',
           padding: '20px',
         }}
