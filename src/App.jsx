@@ -4,6 +4,7 @@ import Home from './Pages/Home';
 import Productdetails from './Pages/Productdetails';
 import Cart from './Pages/Cart';
 import Checkout from './Pages/Checkout';
+import NotFoundPage from './Pages/NotFoundPage';
 
 function App() {
   let element = useRoutes([
@@ -24,6 +25,10 @@ function App() {
     {
       path: '/checkout',
       element: <Checkout />
+    },
+    {
+      path: '*',
+      element: <NotFoundPage />
     },
   ]);
 
