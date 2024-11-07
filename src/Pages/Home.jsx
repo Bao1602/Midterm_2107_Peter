@@ -25,7 +25,7 @@ const Home = () => {
   );
 
   return (
-    <div>
+    <div style={{backgroundColor: 'grey'}}>
       <Navibar />
       <CarouselBanner />
       <h1>Find your product here </h1>
